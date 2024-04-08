@@ -18,7 +18,7 @@ def cinema_visit(customers: List[Dict[str, str]],
         customer = Customer(name=customer_data["name"],
                             food=customer_data["food"])
         CinemaBar.sell_product(customer, customer.food)
-        customer_list.append(customer)  # Adding each customer to the list
+        customer_list.append(customer)
 
     cinema_hall.movie_session(movie_name=movie,
                               customers=customer_list,
